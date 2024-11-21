@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Create a Telegram Bot to Track TON Address using DTon Webhook
 
-# Introduction
+## Introduction
 
 Want to get updates on a TON address's activity?
 This guide will show you how to create a Telegram bot that can track on-chain activities on TON
@@ -19,7 +19,7 @@ Everytime there's a new incoming message to the NFT Auction address, we get noti
 
 ---
 
-# Setting Up The Bot
+## Setting Up The Bot
 
 1. Create Telegram Bot using @botfather
 
@@ -69,7 +69,7 @@ After webhook is successfully set, you can go & chat your telegram bot with /sta
 If the bot responds, it means you're good to go, you've correctly set up the bot.
 
 
-# Setting up DTON
+## Setting up DTON
 
 1. Subscribe to GraphQL Plan that supports Webhook 
 
