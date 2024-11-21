@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/dton/create-ton-telegram-bot-with-dton-webhook.md">
+            to="/docs/dton/create-ton-telegram-bot-with-dton-webhook">
             Create TON Telegram Bot using DTon
           </Link>
         </div>
