@@ -13,7 +13,7 @@ We'll use an NFT auction tracker as an example, but the template can be easily a
 
 Here's an example of what our example bot will look like:
 
-![alt text](image-9.png)
+![telegram_bot_tracking_incoming_message](image-9.png)
 
 Everytime there's a new incoming message to the NFT Auction address, we get notified via Telegram
 
@@ -23,15 +23,15 @@ Everytime there's a new incoming message to the NFT Auction address, we get noti
 
 ### 1. Create Telegram Bot using @botfather
 
-Create a new bot using /newbot command at @botfather account on Telegram
+Create a new bot using /newbot command at [@botfather account on Telegram](https://t.me/botfather)
 
-![alt text](image.png)
+![bot_father_create_bot](image.png)
 
 ### 2. Create a Telegram Channel for the bot to send the notification
 
-![alt text](image-1.png)
+![telegram_channel](image-1.png)
 
-- Make sure you invite the bot created in Point 1 to the channel and make the bot as admin
+Invite the bot that's been created to the channel and make the bot as admin
 
 ### 3. Fork the repository: https://github.com/terryds/dton-webhook-tg-bot
 
@@ -61,7 +61,7 @@ Connect your bot to the deployed endpoint
 
 ![alt text](image-4.png)
 
-After webhook is successfully set, you can go & chat your telegram bot with /start or /ping
+After webhook is successfully set, you can chat your telegram bot with /start or /ping
 
 ![alt text](image-3.png)
 
@@ -92,14 +92,14 @@ We take note that the NFT's auction address is `EQAXYZvT-oCUD21K7IAauNiKZPWsTcEi
 
 If there's any incoming message to that address, which means that there's activity (such as a new bid), we want to be notified using our Telegram bot.
 
-So we need to register the webhook on DTon:
+So we need to register the webhook on DTon to listen to those events.
 
 
 ### Register the webhook
 
 To create a webhook you need to send a `profile_webhook_setup` mutation request to DTon's GraphQL endpoint. You should authorize using your personal graphql key: https://dton.io/{your_key}/graphql .
 
-Make sure that you use API key of your GraphQL Plan that you've just subscribed.
+Make sure that you use API key of your GraphQL Plan that you've just subscribed, not the Default one.
 
 In my case, I'm using "Omega Default Key"
 ![omega key](image-7.png)
