@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Create a Telegram Bot to Track TON Address using DTon Webhook
+# Track TON Address using DTon Webhook + Telegam Bot
 
 ## Introduction
 
