@@ -21,19 +21,19 @@ Everytime there's a new incoming message to the NFT Auction address, we get noti
 
 ## Setting Up The Bot
 
-1. Create Telegram Bot using @botfather
+### 1. Create Telegram Bot using @botfather
 
 Create a new bot using /newbot command at @botfather account on Telegram
 
 ![alt text](image.png)
 
-2. Create a Telegram Channel for the bot to send the notification
+### 2. Create a Telegram Channel for the bot to send the notification
 
 ![alt text](image-1.png)
 
 - Make sure you invite the bot created in Point 1 to the channel and make the bot as admin
 
-3. Fork the repository: https://github.com/terryds/dton-webhook-tg-bot
+### 3. Fork the repository: https://github.com/terryds/dton-webhook-tg-bot
 
 Or, you can also clone and push to your account
 
@@ -47,14 +47,14 @@ TELEGRAM_CHANNEL=
 BOT_TOKEN is the token you get from @botfather after creating the bot
 TELEGRAM_CHANNEL is username of telegram channel created in point 2. Don't forget to put `@` in front, such as `@telegram_channel`
 
-3. Configure the environment variable and deploy using Deno Deploy
+### 4. Configure the environment variable and deploy using Deno Deploy
 
 - Go to [Deno Deploy](https://deno.com/deploy)
 - Set up the environment variable and connect your github
 ![alt text](image-2.png)
 - Deploy
 
-4. Set Telegram Webhook and check if the bot is working (Optional)
+### 5. Set Telegram Webhook and check if the bot is working
 
 Connect your bot to the deployed endpoint
 ```https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<MY_SUBDOMAIN>.deno.dev/<BOT_TOKEN>```
@@ -71,7 +71,7 @@ If the bot responds, it means you're good to go, you've correctly set up the bot
 
 ## Setting up DTON
 
-1. Subscribe to GraphQL Plan that supports Webhook 
+### Subscribe to GraphQL Plan that supports Webhook 
 
 - Go to [@dtontech_bot](https://t.me/dtontech_bot)
 - Open the app
@@ -95,7 +95,7 @@ If there's any incoming message to that address, which means that there's activi
 So we need to register the webhook on DTon:
 
 
-1. Register the webhook
+### Register the webhook
 
 To create a webhook you need to send a `profile_webhook_setup` mutation request to DTon's GraphQL endpoint. You should authorize using your personal graphql key: https://dton.io/{your_key}/graphql .
 
@@ -113,7 +113,7 @@ After you get the api key, let's register the webhook using GraphQL API
 mutation {
   profile_webhook_setup(
     webhook_id: 1
-    endpoint: {your_endpoint}
+    endpoint: {your_endpoint}/notify
     filters: {address__friendly_in: ["EQAXYZvT-oCUD21K7IAauNiKZPWsTcEiZ2SmLMmeiwV4R5kf"]}
     fields: ["hash","now","in_msg_src_addr_address_hex__friendly","in_msg_value_grams","in_msg_comment"]
   ) {
@@ -129,6 +129,8 @@ mutation {
 }
 ```
 ![webhook call](image-8.png)
+
+Change `{your_endpoint}` with your deployed Deno deploy endpoint with '/notify' path just like [what programmed in the bot](https://github.com/terryds/dton-webhook-tg-bot/blob/ae273cffcb614f572550d6c73033f7cf09c5e079/main.ts#L20).
 
 We supply these fields:
 - `hash` : Transaction hash
