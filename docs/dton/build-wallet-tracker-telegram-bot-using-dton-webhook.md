@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Create a Telegram Bot to Track TON Address using DTon Webhook
 
 # Introduction
@@ -45,7 +49,7 @@ TELEGRAM_CHANNEL is username of telegram channel created in point 2. Don't forge
 
 3. Configure the environment variable and deploy using Deno Deploy
 
-- Go to [Deno Deploy](deno.com/deploy)
+- Go to [Deno Deploy](https://deno.com/deploy)
 - Set up the environment variable and connect your github
 ![alt text](image-2.png)
 - Deploy
