@@ -33,7 +33,9 @@ Create a new bot using /newbot command at [@botfather account on Telegram](https
 
 Invite the bot that's been created to the channel and make the bot as admin
 
-### 3. Fork the repository: https://github.com/terryds/dton-webhook-tg-bot
+### 3. Fork the repository
+
+Fork this Github repo: [Telegram Notification Bot](https://github.com/terryds/dton-webhook-tg-bo)
 
 Or, you can also clone and push to your account
 
@@ -46,6 +48,7 @@ TELEGRAM_CHANNEL=
 
 BOT_TOKEN is the token you get from @botfather after creating the bot
 TELEGRAM_CHANNEL is username of telegram channel created in point 2. Don't forget to put `@` in front, such as `@telegram_channel`
+
 
 ### 4. Configure the environment variable and deploy using Deno Deploy
 
