@@ -2,19 +2,23 @@
 sidebar_position: 2
 ---
 
-# Create Your Own TonScanner with DTon GraphQL
+# Create Your Own Ton Explorer with DTon GraphQL
 
 ## Introduction
 
 Hi, Ton enthusiast!
 
-In this lesson, we're going to learn how you can create your own Ton Explorer, a.k.a. TonScanner, by utilizing DTon GraphQL. A Ton Explorer lets you interact with and analyze the TON Blockchain, offering features like transaction lookups. Let’s dive in!
+In this lesson, we're going to learn how you can create your own Ton Explorer, a.k.a. "Ton Scan", by utilizing DTon GraphQL. A Ton Explorer lets you interact with and analyze the TON Blockchain. You can fetch latest transactions, lookup transactions, monitor specific addresses, and more. Let’s dive in!
 
+![ton explorer](image-11.png)
 ---
 
 ## Ton Indexer
 
 The Ton Indexer is a powerful open-source tool that helps you get on-chain data and store it in an SQL database. By doing so, it provides a convenient API for developers to interact with blockchain data. 
+
+
+![Ton Indexer](image-12.png)
 
 If you're interested in running the Ton Indexer yourself, you can find it here:  
 👉 [https://github.com/toncenter/ton-indexer](https://github.com/toncenter/ton-indexer)
@@ -24,6 +28,8 @@ If you're interested in running the Ton Indexer yourself, you can find it here:
 ## DTon GraphQL API
 
 Instead of setting up and maintaining the Ton Indexer, which requires resources to keep it running 24/7, you can use the DTon GraphQL API. This API allows you to query the blockchain data directly without the overhead of maintaining your infrastructure.
+
+![dton graphql](image-13.png)
 
 You can find the DTon GraphQL API documentation here:  
 👉 [https://docs.dton.io](https://docs.dton.io)
@@ -37,6 +43,8 @@ We’ll now explore how to build a TON Explorer, focusing on core functionalitie
 ---
 
 ### Getting Latest Transactions
+
+![ton explorer](image-11.png)
 
 To fetch the latest transactions, visit [DTon.io](https://dton.io), open your browser's Developer Tools, and click on the "Transactions" section. This will trigger a GraphQL query like the one below:
 
@@ -93,6 +101,8 @@ When you click on a wallet address in the [DTon Explorer](https://dton.io), it n
 For example, visiting the URL below:  
 
 👉 [https://dton.io/a/EQAT-upcRNnScON9XBL0XyJNkLIqFNwitR72iZoz5jSWaP4Kf](https://dton.io/a/EQAT-upcRNnScON9XBL0XyJNkLIqFNwitR72iZoz5jSWaP4Kf)  
+
+![alt text](image-14.png)
 
 With Developer Tools enabled, you’ll notice the following GraphQL query:
 
