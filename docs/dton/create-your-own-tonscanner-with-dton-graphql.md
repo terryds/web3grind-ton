@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Hi, Ton enthusiast!
 
-In this lesson, we're going to learn how you can create your own Ton Explorer, a.k.a. TonScanner, by utilizing DTon GraphQL. A Ton Explorer lets you interact with and analyze the TON Blockchain, offering features like transaction lookups and wallet monitoring. Let’s dive in!
+In this lesson, we're going to learn how you can create your own Ton Explorer, a.k.a. TonScanner, by utilizing DTon GraphQL. A Ton Explorer lets you interact with and analyze the TON Blockchain, offering features like transaction lookups. Let’s dive in!
 
 ---
 
