@@ -1,6 +1,7 @@
 # Setting Up a Liteserver Node for The Open Network (TON)
 
-A Liteserver node in TON enables lightweight clients to interact with the blockchain without the need to run a full node. You can set up a Liteserver manually or utilize services like dTON for a more streamlined process.
+A Liteserver node in TON enables lightweight clients to interact with the blockchain without the need to run a full node.  
+There are two ways of doing this: the traditional/manual setup, or using dTON Liteserver service to spin up a Liteserver node quickly.
 
 ---
 
